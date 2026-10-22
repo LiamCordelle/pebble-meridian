@@ -1,49 +1,43 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "app_id": "660f9fba42274715a277bb81",
   "store_url": "https://apps.repebble.com/660f9fba42274715a277bb81",
-  "github_url": "https://github.com/LiamCordelle/pebble-meridian",
-  "download_url": "https://appstore-api.repebble.com/api/assets/pbw/660f9fba42274715a277bb81/1.0.1/0e623998-5f67-46c1-8fbe-112834f2cb64.pbw",
   "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
-  "published_date": "2026-10-22T20:24:23.697",
-  "release_notes": "Initial public release of Meridian for Pebble Time 2. Live health, reliable weather, configurable units and world time, with a tap/flick detail view. Includes the Meridian launcher icon.",
   "visible": true,
-  "native_launcher_icon_resource_id": 1,
-  "native_launcher_icon_size": [
-    25,
-    25
-  ],
-  "store_icon_sizes": [
-    [
-      80,
-      80
-    ],
-    [
-      144,
-      144
-    ]
-  ],
-  "gallery_count": 2,
-  "local_pbw_sha256": "6694eccc500bb5304e5fb540dc7701387c387e447bab259704f0de8586fd75b4",
-  "published_pbw_sha256": "6694eccc500bb5304e5fb540dc7701387c387e447bab259704f0de8586fd75b4",
-  "published_pbw_contents_verified": true,
-  "kit_version": "2.0.0",
-  "kit_revision": "42dd429169de83fcd45821b425ab8bd4bc759d81",
-  "source_revision": "9b45ea051ddff18a603773585486e359f07f7c63",
+  "is_published": true,
+  "has_pbw": true,
+  "published_date": "2026-10-22T21:03:18.403",
+  "release_notes": "New installations now default to an 8,000-step daily goal. Existing saved step goals are preserved. Includes the latest shared watchface kit.",
+  "gallery_counts": {
+    "emery": 2
+  },
+  "screenshots_unchanged": true,
+  "kit_version": "2.1.2",
+  "kit_revision": "71a935de2c9554d8fa29570ceece633b7bd0214a",
+  "source_revision": "c5d758cf7896befdac91766a42bc6ab90985b54f",
+  "local_pbw_sha256": "8297cb6d0ab1b3be44646f6618ccffaf23749690bee13969ecedd3025e8e1cae",
   "release_build_provenance": {
-    "created_utc": "2026-10-22T20:23:28.581866+00:00",
+    "created_utc": "2026-10-22T21:02:16.316048+00:00",
     "app": "pebble-meridian",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
-    "app_revision": "9b45ea051ddff18a603773585486e359f07f7c63",
+    "app_revision": "c5d758cf7896befdac91766a42bc6ab90985b54f",
     "app_modified": false,
-    "kit_version": "2.0.0",
-    "kit_revision": "42dd429169de83fcd45821b425ab8bd4bc759d81",
+    "kit_version": "2.1.2",
+    "kit_revision": "71a935de2c9554d8fa29570ceece633b7bd0214a",
     "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
-    "pbw_sha256": "6694eccc500bb5304e5fb540dc7701387c387e447bab259704f0de8586fd75b4",
+    "pbw_sha256": "8297cb6d0ab1b3be44646f6618ccffaf23749690bee13969ecedd3025e8e1cae",
     "scenario": 3,
     "touch_window_ms": 0,
     "tests_passed": true,
     "renders_checked": true
-  }
+  },
+  "runtime_default_verification": {
+    "app": "pebble-meridian",
+    "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
+    "fresh_default": 8000,
+    "persisted_goal_verified": 12500,
+    "no_faults": true
+  },
+  "verification": "Authenticated store record confirms the expected existing app, visible published version, PBW and retained gallery. Local release hash is unchanged after the publish build."
 }

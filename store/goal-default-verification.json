@@ -1,0 +1,7 @@
+{
+  "app": "pebble-meridian",
+  "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
+  "fresh_default": 8000,
+  "persisted_goal_verified": 12500,
+  "no_faults": true
+}
