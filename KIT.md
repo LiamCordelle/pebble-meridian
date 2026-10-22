@@ -110,3 +110,11 @@ source commit. The kit remained at 2.0.0 / 42dd429. Public metadata confirms
 two Emery screenshots and launcher icon resource ID 1; the downloaded public
 PBW matches every local ZIP entry and the complete SHA-256. See
 `store/published.json` for the exact release/source/artifact receipt.
+
+## 8,000-step default — 22 October 2026
+
+Updated to shared kit 2.1.2 (`71a935d`). Fresh watch/phone settings and
+face fallbacks use 8,000 steps. Valid saved goals are preserved. Protocol keys,
+persistence layouts and explicit screenshot fixtures are unchanged. Shared and
+consumer tests, all five render suites and fresh-profile QEMU checks cover the
+new default and a saved 12,500-step goal across explicit stop/start.

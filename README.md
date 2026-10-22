@@ -32,7 +32,7 @@ with another face. Its kit dependency follows Mondrian and Underground's Git
 submodule/symlink arrangement. See [KIT.md](KIT.md).
 
 The Clay settings expose watch/default or 12/24-hour time, Celsius/Fahrenheit,
-step goal (10,000 default), NZ/UTC/LON/NYC/LA/TKY/SYD world time, weather on/off,
+step goal (8,000 default), NZ/UTC/LON/NYC/LA/TKY/SYD world time, weather on/off,
 and optional health demo fallback (off by default). Weather requires a paired
 phone, location permission and internet. The watch schedules half-hour refreshes,
 with the shared 45-second watchdog, 1/5/15-minute retries and three-hour atomic

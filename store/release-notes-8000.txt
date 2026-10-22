@@ -1,0 +1,1 @@
+New installations now default to an 8,000-step daily goal. Existing saved step goals are preserved. Includes the latest shared watchface kit.

@@ -1,4 +1,5 @@
 #include "lab.h"
+#include "kit/kit_core.h"
 
 // 39 · Meridian v2 (BRIEF.md section 14.39), from 34 · Meridian.
 //
@@ -637,7 +638,7 @@ static void draw_sky_bodies(GContext *ctx, const LabData *d) {
 // the wet ink, so the type inverts exactly where the water crosses it.
 
 static int32_t goal_of(const LabData *d) {
-  return d->step_goal > 0 ? d->step_goal : 10000;
+  return d->step_goal > 0 ? d->step_goal : KIT_DEFAULT_STEP_GOAL;
 }
 
 // The waterline's base row for a step count: the porthole's floor at 0, its
