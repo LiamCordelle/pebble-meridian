@@ -1,43 +1,137 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "app_id": "660f9fba42274715a277bb81",
   "store_url": "https://apps.repebble.com/660f9fba42274715a277bb81",
   "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
   "visible": true,
   "is_published": true,
   "has_pbw": true,
-  "published_date": "2026-10-22T21:03:18.403",
-  "release_notes": "New installations now default to an 8,000-step daily goal. Existing saved step goals are preserved. Includes the latest shared watchface kit.",
+  "published_date": "2026-10-22T21:26:46.027",
+  "release_notes": "Consistent temperature rounding and handling of unavailable sun times. Shared time, forecast and activity helpers improve consistency across watchfaces. New installations default to an 8,000-step goal; existing saved goals are preserved.",
   "gallery_counts": {
     "emery": 2
   },
   "screenshots_unchanged": true,
-  "kit_version": "2.1.2",
-  "kit_revision": "71a935de2c9554d8fa29570ceece633b7bd0214a",
-  "source_revision": "c5d758cf7896befdac91766a42bc6ab90985b54f",
-  "local_pbw_sha256": "8297cb6d0ab1b3be44646f6618ccffaf23749690bee13969ecedd3025e8e1cae",
+  "kit_version": "2.2.0",
+  "kit_revision": "c737afcfadf8cdd62dec58941cf8718fed0d6017",
+  "source_revision": "37af80f4126c135a56ee198c38b5582f7e3e26ec",
+  "local_pbw_sha256": "fe99eaf06a9e04ac4503b9d849109866d424bebd2aad87eacb687b7335bceb2f",
   "release_build_provenance": {
-    "created_utc": "2026-10-22T21:02:16.316048+00:00",
+    "created_utc": "2026-10-22T21:25:37.976926+00:00",
     "app": "pebble-meridian",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
-    "app_revision": "c5d758cf7896befdac91766a42bc6ab90985b54f",
+    "app_revision": "37af80f4126c135a56ee198c38b5582f7e3e26ec",
     "app_modified": false,
-    "kit_version": "2.1.2",
-    "kit_revision": "71a935de2c9554d8fa29570ceece633b7bd0214a",
+    "kit_version": "2.2.0",
+    "kit_revision": "c737afcfadf8cdd62dec58941cf8718fed0d6017",
     "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
-    "pbw_sha256": "8297cb6d0ab1b3be44646f6618ccffaf23749690bee13969ecedd3025e8e1cae",
+    "pbw_sha256": "fe99eaf06a9e04ac4503b9d849109866d424bebd2aad87eacb687b7335bceb2f",
     "scenario": 3,
     "touch_window_ms": 0,
     "tests_passed": true,
     "renders_checked": true
   },
   "runtime_default_verification": {
-    "app": "pebble-meridian",
     "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
-    "fresh_default": 8000,
-    "persisted_goal_verified": 12500,
-    "no_faults": true
+    "fresh_default_goal": 8000,
+    "saved_goal_after_restart": 12500,
+    "synthetic_weather": true,
+    "weather_reply_count": 1,
+    "report": {
+      "frames": [
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 2
+        },
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 2
+        },
+        {
+          "view": "face",
+          "wall_ms": 2
+        },
+        {
+          "view": "face",
+          "wall_ms": 4
+        },
+        {
+          "view": "face",
+          "wall_ms": 2
+        },
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 3
+        },
+        {
+          "view": "face",
+          "wall_ms": 3
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 3
+        },
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "detail",
+          "wall_ms": 6
+        },
+        {
+          "view": "detail",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 10
+        }
+      ],
+      "clock_discontinuity_candidates": [],
+      "faults": [],
+      "starts": [
+        "2.2.0",
+        "2.2.0",
+        "2.2.0"
+      ],
+      "exits": [
+        {
+          "app": "Meridian",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Meridian",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Meridian",
+          "allocated_bytes": 0
+        }
+      ],
+      "weather_acceptances": 1
+    }
   },
   "verification": "Authenticated store record confirms the expected existing app, visible published version, PBW and retained gallery. Local release hash is unchanged after the publish build."
 }

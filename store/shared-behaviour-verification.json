@@ -1,0 +1,101 @@
+{
+  "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
+  "fresh_default_goal": 8000,
+  "saved_goal_after_restart": 12500,
+  "synthetic_weather": true,
+  "weather_reply_count": 1,
+  "report": {
+    "frames": [
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 2
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 2
+      },
+      {
+        "view": "face",
+        "wall_ms": 2
+      },
+      {
+        "view": "face",
+        "wall_ms": 4
+      },
+      {
+        "view": "face",
+        "wall_ms": 2
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 3
+      },
+      {
+        "view": "face",
+        "wall_ms": 3
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 3
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "detail",
+        "wall_ms": 6
+      },
+      {
+        "view": "detail",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 10
+      }
+    ],
+    "clock_discontinuity_candidates": [],
+    "faults": [],
+    "starts": [
+      "2.2.0",
+      "2.2.0",
+      "2.2.0"
+    ],
+    "exits": [
+      {
+        "app": "Meridian",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Meridian",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Meridian",
+        "allocated_bytes": 0
+      }
+    ],
+    "weather_acceptances": 1
+  }
+}
