@@ -101,3 +101,12 @@ Liam approved the icon, source commit, new public GitHub repository and Pebble
 publication. The 25×25 launcher icon uses the same MENU_ICON/menuIcon resource
 registration as Mondrian and Underground; 80×80 and 144×144 store icons are
 included. The release uses the unchanged shared kit 2.0.0 dependency.
+
+Release 1.0.1 was published on 22 October 2026 at
+https://apps.repebble.com/660f9fba42274715a277bb81, with public source at
+https://github.com/LiamCordelle/pebble-meridian. The normal latest-kit release
+workflow fetched main, passed tests and 47 renders, and built from a clean
+source commit. The kit remained at 2.0.0 / 42dd429. Public metadata confirms
+two Emery screenshots and launcher icon resource ID 1; the downloaded public
+PBW matches every local ZIP entry and the complete SHA-256. See
+`store/published.json` for the exact release/source/artifact receipt.

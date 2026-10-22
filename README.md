@@ -117,3 +117,16 @@ Physical-watch timing and touch power remain unmeasured.
 The SDK profile was restored and QEMU stopped. The final artifact and explicit
 release provenance receipt are `build/pebble-meridian.pbw` and
 `build/pebble-meridian.provenance.json`. The release receipt binds the artifact to the app commit and shared kit revision.
+
+## Published release
+
+[Install Meridian 1.0.1 from the Pebble App Store](https://apps.repebble.com/660f9fba42274715a277bb81).
+[Public source repository](https://github.com/LiamCordelle/pebble-meridian).
+Clone with `git clone --recurse-submodules https://github.com/LiamCordelle/pebble-meridian.git`.
+
+The launcher/watchfaces-list icon is a native 25×25 MENU_ICON resource (ID 1),
+matching the registration used by Mondrian and Underground. The 80×80 and
+144×144 store icons are also bundled in this repository. Both approved Emery
+screenshots appear on the public listing. The public PBW was downloaded and
+verified byte for byte against the clean 1.0.1 release build. Publication and
+artifact provenance are recorded in `store/published.json`.

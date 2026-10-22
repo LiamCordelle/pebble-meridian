@@ -1,0 +1,18 @@
+Appstore auth preflight...
+API base: https://appstore-api.repebble.com
+Developer link check successful.
+Building app...
+App build successful.
+PBW Metadata
+Using PBW: /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/build/pebble-meridian.pbw
+PBW app UUID: 182c6200-6cd6-49ab-ae76-67c45d6b7f03
+Name: Meridian
+PBW Version: 1.0.1
+Publish Version: 1.0.1
+Platforms: emery
+No existing app mapping for UUID 182c6200-6cd6-49ab-ae76-67c45d6b7f03. Creating a new app...
+Publishing new app to Pebble Appstore...
+Waiting for app create response (icon generation may take ~2 min) [                        ]   0sWaiting for app create response (icon generation may take ~2 min) [=                       ]   0sWaiting for app create response (icon generation may take ~2 min) [==                      ]   0sWaiting for app create response (icon generation may take ~2 min) [===                     ]   1sWaiting for app create response (icon generation may take ~2 min) [====                    ]   1sWaiting for app create response (icon generation may take ~2 min) [=====                   ]   1sWaiting for app create response (icon generation may take ~2 min) [======                  ]   1sWaiting for app create response (icon generation may take ~2 min) [=======                 ]   2sWaiting for app create response (icon generation may take ~2 min) [========                ]   2sWaiting for app create response (icon generation may take ~2 min) [=========               ]   2sWaiting for app create response (icon generation may take ~2 min) [==========              ]   2sWaiting for app create response (icon generation may take ~2 min) [========================]   2s
+App submitted successfully
+Visit the dashboard to add/edit your changelog: https://appstore-api.repebble.com/dashboard
+App page: https://apps.rePebble.com/660f9fba42274715a277bb81

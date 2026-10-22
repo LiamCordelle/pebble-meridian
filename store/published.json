@@ -1,0 +1,49 @@
+{
+  "version": "1.0.1",
+  "app_id": "660f9fba42274715a277bb81",
+  "store_url": "https://apps.repebble.com/660f9fba42274715a277bb81",
+  "github_url": "https://github.com/LiamCordelle/pebble-meridian",
+  "download_url": "https://appstore-api.repebble.com/api/assets/pbw/660f9fba42274715a277bb81/1.0.1/0e623998-5f67-46c1-8fbe-112834f2cb64.pbw",
+  "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
+  "published_date": "2026-10-22T20:24:23.697",
+  "release_notes": "Initial public release of Meridian for Pebble Time 2. Live health, reliable weather, configurable units and world time, with a tap/flick detail view. Includes the Meridian launcher icon.",
+  "visible": true,
+  "native_launcher_icon_resource_id": 1,
+  "native_launcher_icon_size": [
+    25,
+    25
+  ],
+  "store_icon_sizes": [
+    [
+      80,
+      80
+    ],
+    [
+      144,
+      144
+    ]
+  ],
+  "gallery_count": 2,
+  "local_pbw_sha256": "6694eccc500bb5304e5fb540dc7701387c387e447bab259704f0de8586fd75b4",
+  "published_pbw_sha256": "6694eccc500bb5304e5fb540dc7701387c387e447bab259704f0de8586fd75b4",
+  "published_pbw_contents_verified": true,
+  "kit_version": "2.0.0",
+  "kit_revision": "42dd429169de83fcd45821b425ab8bd4bc759d81",
+  "source_revision": "9b45ea051ddff18a603773585486e359f07f7c63",
+  "release_build_provenance": {
+    "created_utc": "2026-10-22T20:23:28.581866+00:00",
+    "app": "pebble-meridian",
+    "version": "1.0.1",
+    "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
+    "app_revision": "9b45ea051ddff18a603773585486e359f07f7c63",
+    "app_modified": false,
+    "kit_version": "2.0.0",
+    "kit_revision": "42dd429169de83fcd45821b425ab8bd4bc759d81",
+    "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
+    "pbw_sha256": "6694eccc500bb5304e5fb540dc7701387c387e447bab259704f0de8586fd75b4",
+    "scenario": 3,
+    "touch_window_ms": 0,
+    "tests_passed": true,
+    "renders_checked": true
+  }
+}
