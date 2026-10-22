@@ -20,6 +20,36 @@ messaging or lifecycle code. Initialize missing dependencies with
   changes. Add a kit configuration option/interface if the faces need different
   behaviour. Do not fork shared code or copy it into another watchface.
 
+## Reuse before adding face-local logic
+
+For every implementation change, check whether another face could use the
+behaviour. General calculations and services belong in `shared-kit`, even for
+their first consumer. Moon phase/illumination calculations belong in the kit;
+moon artwork, placement and styling belong here. Existing local implementations
+are not a precedent: when touching reusable local logic, extract it into the kit
+and use the shared API. Keep unrelated refactors out of scope. Consumers retain
+face-specific settings semantics/persistence and presentation; add generic kit
+interfaces where needed rather than embedding consumer names in shared code.
+
+## Check kit upgrades at the start of a watchface update
+
+1. Record the current kit SHA and worktree state. Fetch `shared-kit`'s
+   `origin/main` and inspect changes since the current revision. Use the latest
+   shared, tested `main` in the new watchface version. For a clean dependency,
+   `npm run kit:update` performs the guarded update without building. Re-read the
+   upgraded kit's AGENTS.md/release notes and handle API or behaviour changes.
+2. Preserve dirty or unpublished kit work. Fetch/check for updates, but do not
+   reset/stash/drop edits or abandon commits to force an upgrade. Integrate the
+   work through the shared kit workflow. Report network/integration blockers and
+   current/latest known SHAs; do not silently claim a stale kit is up to date.
+   Continue independent work while an upgrade is blocked.
+3. Run shared and consumer tests, render coverage and runtime checks appropriate
+   to the change with the selected kit. Finish with `npm run release -- --render`.
+   If release advances the kit again, repeat affected validation on that revision.
+   Record the updated gitlink and kit version/SHA with the face release and
+   provenance; report the old/new dependency revisions. Use `--pinned` only for
+   an explicitly requested historical/pinned build.
+
 ## Validate and share a kit change
 
 1. Add regression coverage in `shared-kit/tests`; keep consumer-specific checks
