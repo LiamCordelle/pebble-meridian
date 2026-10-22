@@ -1,4 +1,5 @@
 #include "lab.h"
+#include "kit/kit_calc.h"
 #include "kit/kit_core.h"
 
 // 39 · Meridian v2 (BRIEF.md section 14.39), from 34 · Meridian.
@@ -113,10 +114,7 @@ static int past_mid(const LabData *d, int h) {
 // Find the first available future observation for a clock-hour slot. The kit
 // supplies local labels so repeated/skipped DST hours are never indexed as UTC.
 static int forecast_index(const LabData *d, int h) {
-  for (int i = 0; i < d->rolling_count && i < 24; ++i) {
-    if (d->rolling_hour[i] == h) return i;
-  }
-  return -1;
+  return kit_forecast_hour_index(d->rolling_hour,d->rolling_day,d->rolling_count,h,KIT_ANY_DAY);
 }
 
 static int forecast_mid(const LabData *d, int h, int i) {
@@ -124,17 +122,17 @@ static int forecast_mid(const LabData *d, int h, int i) {
 }
 
 static int display_temp(const LabData *d, int c) {
-  return d->temp_fahrenheit ? (c * 9 + (c >= 0 ? 2 : -2)) / 5 + 32 : c;
+  return kit_temperature(c,d->temp_fahrenheit);
 }
 
 // The dial, painted pixel by pixel ---------------------------------------------
 
 static bool sun_known(const LabData *d) {
-  return d->weather_ok && d->sunrise_min >= 0 && d->sunset_min > d->sunrise_min;
+  return kit_daylight_state(d->weather_ok,d->minute_of_day,d->sunrise_min,d->sunset_min)!=KitDaylightUnknown;
 }
 
 static bool sun_is_up(const LabData *d) {
-  return sun_known(d) && d->minute_of_day >= d->sunrise_min && d->minute_of_day < d->sunset_min;
+  return kit_daylight_state(d->weather_ok,d->minute_of_day,d->sunrise_min,d->sunset_min)==KitDaylightDay;
 }
 
 // Sky colour at a minute of the day: day, three twilight steps, night.
@@ -806,37 +804,12 @@ static void draw(GContext *ctx, GRect bounds, const LabData *d) {
 
 // Minute of the day the goal was reached (from steps by hour), or -1.
 static int goal_minute(const LabData *d, int32_t goal) {
-  int32_t cum = 0;
-  for (int h = 0; h <= d->now.tm_hour && h < 24; h++) {
-    int32_t s = d->steps_by_hour[h];
-    if (s > 0 && cum + s >= goal) {
-      // The current bucket contains only the elapsed part of this hour.
-      int minutes = h == d->now.tm_hour ? d->now.tm_min : 60;
-      return h * 60 + (int)(((goal - cum) * minutes) / s);
-    }
-    cum += s;
-  }
-  return -1;
+  return kit_goal_reached_minute(d->steps_ok,d->steps_by_hour,d->minute_of_day,goal);
 }
 
 // ETA at today's pace (Summit): steps per minute since the first active hour.
 static int eta_minute(const LabData *d, int32_t goal) {
-  if (!d->steps_ok || d->steps <= 0) {
-    return -1;
-  }
-  int first = -1;
-  for (int h = 0; h < 24; h++) {
-    if (d->steps_by_hour[h] > 0) {
-      first = h;
-      break;
-    }
-  }
-  int elapsed = d->minute_of_day - (first < 0 ? 0 : first * 60);
-  if (elapsed < 1) {
-    elapsed = 1;
-  }
-  int32_t left = goal - d->steps;
-  return d->minute_of_day + (int)((left * elapsed) / d->steps);
+  return kit_goal_eta_minute(d->steps_ok,d->steps,d->steps_by_hour,d->minute_of_day,goal);
 }
 
 // A number in LECO with a hand-placed thousands comma, centred on x = 100.

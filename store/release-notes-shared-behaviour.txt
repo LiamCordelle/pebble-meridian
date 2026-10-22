@@ -1,0 +1,1 @@
+Consistent temperature rounding and handling of unavailable sun times. Shared time, forecast and activity helpers improve consistency across watchfaces. New installations default to an 8,000-step goal; existing saved goals are preserved.

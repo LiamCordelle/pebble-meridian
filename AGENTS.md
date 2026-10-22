@@ -7,8 +7,8 @@ messaging or lifecycle code. Initialize missing dependencies with
 ## Decide where a change belongs
 
 - Shared health/HR history, weather validation/cache/retries, settings parsing,
-  world clocks, AppMessage transport, touch/lifecycle/timing, common drawing
-  helpers and LabData/LabDesign contract changes belong in `shared-kit`.
+  world clocks, AppMessage transport, touch/lifecycle/timing, shared calculations
+  and LabData/LabDesign contract changes belong in `shared-kit`.
 - This face's layout, artwork, wording, scenarios, assets, exposed settings,
   UUID and app version belong in this repository. Its phone configuration is
   `src/pkjs/app-config.js`; retain its existing storageKey.
@@ -84,3 +84,23 @@ production changes documented in KIT.md. Keep consumer integration notes in
 root KIT.md; leave the dependency clean unless shared behaviour needs a fix.
 Do not commit design-facing changes until Liam signs off. Ask before creating
 branches, remotes or PRs. Never publish without an explicit request.
+
+## Shared behaviour and runtime checks
+
+Use shared-kit `kit_calc.h` for moon phase, temperature/event-time formatting,
+forecast searches, daylight state and activity estimates. `kit_data.c` owns
+live-data assembly, moon illumination and world-time projection. Keep fixture
+values/preview overrides here, but call the shared calculations. Unknown sun
+times are distinct from night; goal times are estimates and goal-day counts
+are not streaks. New/default step goals are 8,000; preserve valid saved goals.
+
+The kit focuses on data, behaviour and test support. Keep artwork, layout,
+fonts, drawing and face-specific wording here; existing shared drawing helpers
+remain compatibility utilities, not a requirement to grow a drawing framework.
+
+Run `tools/emulator_smoke.py` with pebble-tool's Python for the shared fresh
+default, saved-goal, explicit restart, synthetic weather/cache and detail checks.
+It uses `shared-kit/tools/emulator.py`, restores the SDK profile and stops only
+its owned session. Keep face-specific visual assertions in local checkers.
+Use the shared session/transport/fixture/log APIs for new emulator scenarios;
+do not copy their implementations or hardcode a kit version in log assertions.

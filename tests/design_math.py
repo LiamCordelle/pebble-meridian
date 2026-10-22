@@ -11,10 +11,11 @@ end=text.index('// ETA at today',start)
 harness='''#include <assert.h>
 #include <stdint.h>
 #include <time.h>
-typedef struct {struct tm now; uint16_t steps_by_hour[24];} LabData;
+#include "kit_calc.h"
+typedef struct {struct tm now; uint16_t steps_by_hour[24];bool steps_ok;int minute_of_day;} LabData;
 '''+text[start:end]+'''
 int main(void) {
- LabData d={0};d.now.tm_hour=6;d.now.tm_min=10;d.steps_by_hour[6]=10000;
+ LabData d={0};d.now.tm_hour=6;d.now.tm_min=10;d.minute_of_day=370;d.steps_ok=true;d.steps_by_hour[6]=10000;
  assert(goal_minute(&d,5000)==365); // 06:05, not 06:30
  assert(goal_minute(&d,10000)==370); // never later than now
  d.steps_by_hour[5]=5000;
@@ -26,6 +27,7 @@ int main(void) {
 with tempfile.TemporaryDirectory() as temp:
  source=Path(temp)/'goal.c';source.write_text(harness)
  exe=Path(temp)/'goal'
- subprocess.run(['cc','-std=c99','-Wall','-Werror',str(source),'-o',str(exe)],check=True)
+ subprocess.run(['cc','-std=c99','-Wall','-Werror','-I'+str(root/'shared-kit/src/c/kit'),
+                 str(source),str(root/'shared-kit/src/c/kit/kit_calc.c'),'-o',str(exe)],check=True)
  subprocess.run([str(exe)],check=True)
 print('Production goal-time checks passed: current hour, boundary and unmet goal.')

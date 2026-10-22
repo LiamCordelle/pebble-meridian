@@ -8,15 +8,11 @@ static int preview_int(const char *name,int fallback) {
 }
 #endif
 
-#ifndef LAB_HOST_RENDER
 #include "kit/kit.h"
-#endif
 
 #define DEMO_EPOCH 1792228140    // Sat 17 Oct 2026 10:09 BST (09:09 UTC)
 #define STRESS_EPOCH 1790797680  // Wed 30 Sep 2026 20:48 BST (19:48 UTC)
 #define DEMO_UTC_OFFSET 3600     // the demo/stress clock is UK summer time
-#define KNOWN_NEW_MOON 947182440 // 2000-01-06 18:14 UTC
-#define SYNODIC_SECONDS 2551443
 
 static const uint16_t DEMO_STEPS_BY_HOUR[24] = {
   0, 0, 0, 0, 0, 0, 120, 980, 1640, 2612, 1490
@@ -60,64 +56,12 @@ static const uint8_t STRESS_HR_BY_HOUR[24] = {
   151, 148
 };
 
-// --- Calendar helpers (NZ daylight saving, ported from Signal Deck) --------
-
-static int day_of_week(int year, int month, int day) {
-  static const int offsets[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
-  if (month < 3) {
-    year--;
-  }
-  return (year + year / 4 - year / 100 + year / 400 + offsets[month - 1] + day) % 7;
-}
-
-static int first_weekday_in_month(int year, int month, int weekday) {
-  return 1 + ((weekday - day_of_week(year, month, 1) + 7) % 7);
-}
-
-static int last_weekday_in_month(int year, int month, int last_day, int weekday) {
-  return last_day - ((day_of_week(year, month, last_day) - weekday + 7) % 7);
-}
-
-static bool nz_is_dst(int year, int month, int day) {
-  if (month >= 10 || month <= 3) {
-    return true;
-  }
-  if (month >= 5 && month <= 8) {
-    return false;
-  }
-  if (month == 9) {
-    return day >= last_weekday_in_month(year, 9, 30, 0);
-  }
-  return day < first_weekday_in_month(year, 4, 0);
-}
+// --- Shared calendar projection for fixed screenshot scenarios --------
 
 static void fill_world_time(LabData *d) {
-  snprintf(d->world_label, sizeof(d->world_label), "NZ");
-  time_t standard = d->epoch + 12 * 3600;
-  struct tm standard_tm = *gmtime(&standard);
-  int dst = nz_is_dst(standard_tm.tm_year + 1900, standard_tm.tm_mon + 1,
-                      standard_tm.tm_mday) ? 3600 : 0;
-  time_t world = standard + dst;
-  struct tm world_tm = *gmtime(&world);
-  d->world_hour = world_tm.tm_hour;
-  d->world_min = world_tm.tm_min;
-  if (world_tm.tm_year != d->now.tm_year) {
-    d->world_day_delta = world_tm.tm_year > d->now.tm_year ? 1 : -1;
-  } else {
-    d->world_day_delta = lab_clamp(world_tm.tm_yday - d->now.tm_yday, -1, 1);
-  }
+  kit_world_fill(d,0);
 }
 
-static void fill_moon(LabData *d) {
-  int32_t since = (int32_t)((d->epoch - KNOWN_NEW_MOON) % SYNODIC_SECONDS);
-  if (since < 0) {
-    since += SYNODIC_SECONDS;
-  }
-  d->moon_phase_e3 = (int)(((int64_t)since * 1000) / SYNODIC_SECONDS);
-  int32_t angle = (int32_t)(((int64_t)since * TRIG_MAX_ANGLE) / SYNODIC_SECONDS);
-  d->moon_illum_pct =
-      (int)(((int64_t)(TRIG_MAX_RATIO - cos_lookup(angle)) * 50) / TRIG_MAX_RATIO);
-}
 
 static void set_fixed_time(LabData *d, time_t epoch) {
   d->epoch = epoch;
@@ -221,18 +165,6 @@ __attribute__((unused)) static void fill_empty(LabData *d) {
   d->weather_code = -1;
 }
 
-#ifndef LAB_HOST_RENDER
-__attribute__((unused)) static void fill_live(LabData *d) {
-  d->epoch = time(NULL);
-  d->now = *localtime(&d->epoch);
-  d->minute_of_day = d->now.tm_hour * 60 + d->now.tm_min;
-  BatteryChargeState battery = battery_state_service_peek();
-  d->battery_pct = battery.charge_percent;
-  d->charging = battery.is_charging;
-  d->bt_connected = connection_service_peek_pebble_app_connection();
-  kit_fill(d);
-}
-#endif
 
 void lab_data_refresh(LabData *d) {
   memset(d, 0, sizeof(*d));
@@ -241,8 +173,7 @@ void lab_data_refresh(LabData *d) {
 #elif LAB_SCENARIO == LAB_EMPTY
   fill_empty(d);
 #elif LAB_SCENARIO == LAB_LIVE
-  fill_live(d);
-  fill_moon(d);
+  kit_live_data_refresh(d);
   return;
 #else
   fill_demo(d);
@@ -280,7 +211,7 @@ void lab_data_refresh(LabData *d) {
   }
 #endif
   fill_world_time(d);
-  fill_moon(d);
+  kit_moon_fill(d);
   // Deterministic forecast extensions for the lab's three screenshot scenes.
   d->tomorrow_sunrise_min = d->sunrise_min + 2;
   d->tomorrow_sunset_min = d->sunset_min - 2;

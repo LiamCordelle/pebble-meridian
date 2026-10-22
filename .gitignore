@@ -6,3 +6,11 @@ node_modules/
 *.pyc
 __pycache__/
 .pebble-logs.pid
+
+# Shared runtime evidence: retain summaries/images, keep local recovery state private.
+shots/emulator-smoke/*
+!shots/emulator-smoke/result.json
+!shots/emulator-smoke/face.png
+!shots/emulator-smoke/detail.png
+!shots/emulator-smoke/timeout.png
+!shots/emulator-smoke/fresh-default.png

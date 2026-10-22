@@ -118,3 +118,18 @@ face fallbacks use 8,000 steps. Valid saved goals are preserved. Protocol keys,
 persistence layouts and explicit screenshot fixtures are unchanged. Shared and
 consumer tests, all five render suites and fresh-profile QEMU checks cover the
 new default and a saved 12,500-step goal across explicit stop/start.
+
+## Shared behaviour extraction — kit 2.2.0
+
+Moon/live-data assembly, temperature/event clocks, bounded forecast queries,
+daylight state and activity estimates now use the shared kit. Drawing and
+scenario fixtures remain here. Underground Fahrenheit now rounds consistently;
+unknown daylight stays unknown and activity math uses 64-bit intermediates.
+The thin tools/emulator_smoke.py entrypoint uses shared profile/transport/
+fixture/log utilities. Existing face-specific visual checkers remain available.
+
+Final dependency: `c737afcfadf8cdd62dec58941cf8718fed0d6017` (kit 2.2.0). Shared/native/phone
+tests, all 271 cross-consumer scenes and the local shared emulator smoke pass.
+Runtime evidence is in shots/emulator-smoke/result.json; fresh 8,000 and saved
+12,500 goals, cold weather-cache restoration, detail timeout and clean exits
+are verified. The original SDK profile was restored.

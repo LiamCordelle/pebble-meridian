@@ -130,3 +130,11 @@ matching the registration used by Mondrian and Underground. The 80×80 and
 screenshots appear on the public listing. The public PBW was downloaded and
 verified byte for byte against the clean 1.0.1 release build. Publication and
 artifact provenance are recorded in `store/published.json`.
+
+## Shared behaviour maintenance
+
+This release uses kit 2.2.0 for shared data and calculations.
+Artwork and explicit render fixtures remain face-owned. Run
+`tools/emulator_smoke.py` with pebble-tool's Python for common runtime checks;
+local emulator/visual checkers retain the face-specific assertions.
+The published 8,000-step-default release is recorded in store/published.json.
