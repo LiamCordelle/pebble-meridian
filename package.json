@@ -1,0 +1,117 @@
+{
+  "name": "pebble-meridian",
+  "author": "Liam Cordelle",
+  "version": "1.0.1",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.0.8"
+  },
+  "pebble": {
+    "displayName": "Meridian",
+    "uuid": "182c6200-6cd6-49ab-ae76-67c45d6b7f03",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": [
+      "health",
+      "location",
+      "configurable"
+    ],
+    "messageKeys": [
+      "READY",
+      "REQUEST_WEATHER",
+      "WEATHER_ID",
+      "WEATHER",
+      "WEATHER_ERROR",
+      "TIME_MODE",
+      "TEMP_UNIT",
+      "STEP_GOAL",
+      "WORLD",
+      "WEATHER_ENABLED",
+      "DEMO_FALLBACK",
+      "LARGE_LABELS"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        },
+        {
+          "type": "font",
+          "name": "FONT_PIXEL_8",
+          "file": "fonts/Silkscreen-Bold.ttf",
+          "characterRegex": "[ -~]"
+        },
+        {
+          "type": "font",
+          "name": "FONT_PIXEL_16",
+          "file": "fonts/Silkscreen-Regular.ttf",
+          "characterRegex": "[ -~]"
+        },
+        {
+          "type": "raw",
+          "name": "WX_SUN",
+          "file": "icons/wx_sun.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "WX_PARTLY",
+          "file": "icons/wx_partly.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "WX_CLOUDY",
+          "file": "icons/wx_cloudy.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "WX_RAIN",
+          "file": "icons/wx_rain.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "WX_SNOW",
+          "file": "icons/wx_snow.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "WX_STORM",
+          "file": "icons/wx_storm.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "WX_FOG",
+          "file": "icons/wx_fog.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "SUN_RISE",
+          "file": "icons/sun_rise.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "SUN_SET",
+          "file": "icons/sun_set.pdc"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "python3 tests/run.py",
+    "build": "pebble build",
+    "render": "python3 tools/render_scenes.py",
+    "release": "python3 tools/release.py",
+    "kit:update": "python3 tools/release.py --update-only"
+  }
+}

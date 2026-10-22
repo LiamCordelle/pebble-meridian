@@ -1,0 +1,4 @@
+[submodule "shared-kit"]
+	path = shared-kit
+	url = https://github.com/LiamCordelle/pebble-watchface-kit.git
+	branch = main

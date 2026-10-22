@@ -1,0 +1,331 @@
+emu-set-time 1792660145
+
+emu-steps 6842
+
+emu-battery --percent 76
+
+install /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/build/pebble-meridian.pbw
+Installing app...
+App install succeeded.
+
+emu-heart-rate 64
+
+emu-heart-rate 64
+
+emu-heart-rate 64
+
+emu-tap
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-settings-12h-fahrenheit.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-settings-12h-fahrenheit.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 330.4 KiB/s 0:00:00
+N/A%[=                                                    ] 409.4 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-weather-fahrenheit.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-weather-fahrenheit.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 323.8 KiB/s 0:00:00
+N/A%[=                                                    ] 401.8 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-face.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-face.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 333.3 KiB/s 0:00:00
+N/A%[=                                                    ] 410.2 KiB/s 0:00:00
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-detail.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-detail.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 324.9 KiB/s 0:00:00
+N/A%[=                                                    ] 403.6 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-timeout.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-timeout.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 345.0 KiB/s 0:00:00
+N/A%[=                                                    ] 417.2 KiB/s 0:00:00
+
+emu-tap
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-toggle.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-toggle.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 325.7 KiB/s 0:00:00
+N/A%[=                                                    ] 406.3 KiB/s 0:00:00
+
+emu-battery --percent 5
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-low-battery.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-low-battery.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 329.9 KiB/s 0:00:00
+N/A%[=                                                    ] 408.0 KiB/s 0:00:00
+
+emu-battery --percent 62 --charging
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-charging.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-charging.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 632.6 KiB/s 0:00:00
+N/A%[=                                                    ] 520.7 KiB/s 0:00:00
+
+emu-battery --percent 76
+
+emu-button click back
+
+install /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/build/pebble-meridian.pbw
+Installing app...
+App install succeeded.
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-restarted.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-restarted.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 413.4 KiB/s 0:00:00
+N/A%[=                                                    ] 398.3 KiB/s 0:00:00
+
+emu-bt-connection --connected no
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-no-phone.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-no-phone.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 450.4 KiB/s 0:00:00
+N/A%[=                                                    ] 437.5 KiB/s 0:00:00
+
+emu-bt-connection --connected yes
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-reconnected.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-reconnected.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 595.0 KiB/s 0:00:00
+N/A%[=                                                    ] 493.1 KiB/s 0:00:00
+
+emu-set-time 1792699914
+
+emu-button click back
+
+emu-steps 6842
+
+emu-battery --percent 76
+
+install /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/build/pebble-meridian.pbw
+Installing app...
+App install succeeded.
+
+emu-heart-rate 64
+
+emu-heart-rate 64
+
+emu-heart-rate 64
+
+emu-tap
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-settings-12h-fahrenheit.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-settings-12h-fahrenheit.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 436.5 KiB/s 0:00:00
+N/A%[=                                                    ] 436.5 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-weather-fahrenheit.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-weather-fahrenheit.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 277.2 KiB/s 0:00:00
+N/A%[=                                                    ] 397.2 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-face.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-face.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 334.1 KiB/s 0:00:00
+N/A%[=                                                    ] 411.3 KiB/s 0:00:00
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-detail.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-detail.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 340.9 KiB/s 0:00:00
+N/A%[=                                                    ] 417.8 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-timeout.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-timeout.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 596.3 KiB/s 0:00:00
+N/A%[=                                                    ] 493.1 KiB/s 0:00:00
+
+emu-tap
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-toggle.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-toggle.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 583.3 KiB/s 0:00:00
+N/A%[=                                                    ] 481.4 KiB/s 0:00:00
+
+emu-battery --percent 5
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-low-battery.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-low-battery.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 336.2 KiB/s 0:00:00
+N/A%[=                                                    ] 383.6 KiB/s 0:00:00
+
+emu-battery --percent 62 --charging
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-charging.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-charging.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 323.6 KiB/s 0:00:00
+N/A%[=                                                    ] 395.3 KiB/s 0:00:00
+
+emu-battery --percent 76
+
+emu-button click back
+
+install /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/build/pebble-meridian.pbw
+Installing app...
+App install succeeded.
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-restarted.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-restarted.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 426.1 KiB/s 0:00:00
+N/A%[=                                                    ] 428.7 KiB/s 0:00:00
+
+emu-bt-connection --connected no
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-no-phone.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-no-phone.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 346.0 KiB/s 0:00:00
+N/A%[=                                                    ] 415.4 KiB/s 0:00:00
+
+emu-bt-connection --connected yes
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-reconnected.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-reconnected.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 468.2 KiB/s 0:00:00
+N/A%[=                                                    ] 450.2 KiB/s 0:00:00
+
+emu-set-time 1792700100
+
+emu-button click back
+
+emu-steps 6842
+
+emu-battery --percent 76
+
+install /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/build/pebble-meridian.pbw
+Installing app...
+App install succeeded.
+
+emu-heart-rate 64
+
+emu-heart-rate 64
+
+emu-heart-rate 64
+
+emu-tap
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-settings-12h-fahrenheit.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-settings-12h-fahrenheit.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 347.1 KiB/s 0:00:00
+N/A%[=                                                    ] 418.8 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-weather-fahrenheit.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-weather-fahrenheit.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 615.3 KiB/s 0:00:00
+N/A%[=                                                    ] 505.0 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-face.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-face.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 330.2 KiB/s 0:00:00
+N/A%[=                                                    ] 397.9 KiB/s 0:00:00
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-detail.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-detail.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 617.4 KiB/s 0:00:00
+N/A%[=                                                    ] 513.3 KiB/s 0:00:00
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-timeout.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-timeout.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 353.1 KiB/s 0:00:00
+N/A%[=                                                    ] 412.1 KiB/s 0:00:00
+
+emu-tap
+
+emu-tap
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-toggle.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-toggle.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 614.7 KiB/s 0:00:00
+N/A%[=                                                    ] 503.1 KiB/s 0:00:00
+
+emu-battery --percent 5
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-low-battery.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-low-battery.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 519.0 KiB/s 0:00:00
+N/A%[=                                                    ] 431.1 KiB/s 0:00:00
+
+emu-battery --percent 62 --charging
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-charging.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-charging.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 337.7 KiB/s 0:00:00
+N/A%[=                                                    ] 413.2 KiB/s 0:00:00
+
+emu-battery --percent 76
+
+emu-button click back
+
+install /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/build/pebble-meridian.pbw
+Installing app...
+App install succeeded.
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-restarted.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-restarted.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 325.4 KiB/s 0:00:00
+N/A%[=                                                    ] 407.5 KiB/s 0:00:00
+
+emu-bt-connection --connected no
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-no-phone.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-no-phone.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 319.7 KiB/s 0:00:00
+N/A%[=                                                    ] 399.1 KiB/s 0:00:00
+
+emu-bt-connection --connected yes
+
+screenshot --no-open /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-reconnected.png
+Saved screenshot to /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-meridian/shots/emulator-reconnected.png
+N/A%[=                                                      ]   0.0 B/s 0:00:00
+N/A%[=                                                    ] 320.4 KiB/s 0:00:00
+N/A%[=                                                    ] 400.6 KiB/s 0:00:00
+
+emu-set-time 1792700330
+
+emu-button click back

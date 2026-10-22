@@ -1,0 +1,40 @@
+[21:16:22] kit_shell.c:129> Watchface kit 2.0.0 started (scenario 3, touch window 0ms)
+[21:16:22] kit_shell.c:27> Frame face 6ms
+[21:16:22] kit_weather.c:38> Weather request 1792700183
+[21:16:22] kit_shell.c:27> Frame face 3ms
+[21:16:23] it_hr_history.c:60> HR minute history ready: data=0 partial=1
+[21:16:23] kit_shell.c:27> Frame face 11ms
+[21:17:00] it_hr_history.c:60> HR minute history ready: data=1 partial=1
+[21:17:00] kit_shell.c:27> Frame face 7ms
+[21:17:07] kit_weather.c:26> Weather watchdog expired
+[21:17:40] kit_shell.c:27> Frame detail 10ms
+[21:17:41] kit_shell.c:27> Frame face 6ms
+[21:17:43] kit_settings.c:50> Kit settings applied: time=1 unit=1 goal=10000 world=0 weather=0 demo=0
+[21:17:43] kit_shell.c:27> Frame face 6ms
+[21:17:45] kit_settings.c:50> Kit settings applied: time=1 unit=1 goal=10000 world=0 weather=1 demo=0
+[21:17:45] kit_weather.c:38> Weather request 1792700184
+[21:17:45] kit_shell.c:27> Frame face 3ms
+[21:17:45] kit_weather.c:93> Weather snapshot accepted (48 hours)
+[21:17:45] kit_shell.c:27> Frame face 3ms
+[21:17:49] kit_settings.c:50> Kit settings applied: time=2 unit=0 goal=10000 world=0 weather=1 demo=0
+[21:17:49] kit_shell.c:27> Frame face 3ms
+[21:17:52] kit_shell.c:27> Frame detail 9ms
+[21:18:00] kit_shell.c:27> Frame face 10ms
+[21:18:00] kit_shell.c:27> Frame face 4ms
+[21:18:00] it_hr_history.c:60> HR minute history ready: data=1 partial=1
+[21:18:03] kit_shell.c:27> Frame detail 5ms
+[21:18:04] kit_shell.c:27> Frame face 6ms
+[21:18:06] kit_shell.c:27> Frame face 4ms
+[21:18:09] kit_shell.c:27> Frame face 5ms
+[21:18:12] kit_shell.c:27> Frame face 7ms
+[21:18:14] ocess_manager.c:487> Heap Usage for App <Meridian>: Total Size <107472B> Used <3036B> Still allocated <0B>
+[21:18:14] kit_shell.c:129> Watchface kit 2.0.0 started (scenario 3, touch window 0ms)
+[21:18:14] kit_shell.c:27> Frame face 4ms
+[21:18:14] kit_shell.c:27> Frame face 2ms
+[21:18:14] kit_weather.c:38> Weather request 1792700295
+[21:18:15] kit_shell.c:27> Frame face 7ms
+[21:18:15] it_hr_history.c:60> HR minute history ready: data=0 partial=1
+[21:18:43] kit_shell.c:27> Frame face 10ms
+[21:18:47] kit_shell.c:27> Frame face 4ms
+[21:18:49] kit_settings.c:50> Kit settings applied: time=0 unit=0 goal=10000 world=0 weather=1 demo=0
+[21:18:49] kit_shell.c:27> Frame face 3ms

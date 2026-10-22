@@ -1,0 +1,4 @@
+Follow your day around a glowing sky ring. Meridian puts time, steps, heart rate,
+weather and UV around a porthole that fills as you walk. Tap or flick for your
+pace, goal estimate, heart range, forecast temperatures and a second time zone.
+Built for Pebble Time 2, with minute-only updates and configurable units.

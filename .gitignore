@@ -1,0 +1,8 @@
+build/
+node_modules/
+.waf-*
+.lock-waf*
+.DS_Store
+*.pyc
+__pycache__/
+.pebble-logs.pid

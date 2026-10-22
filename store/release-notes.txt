@@ -1,0 +1,1 @@
+Initial public release of Meridian for Pebble Time 2. Live health, reliable weather, configurable units and world time, with a tap/flick detail view. Includes the Meridian launcher icon.
